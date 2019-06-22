@@ -1,8 +1,6 @@
 # Site settings
 title: Korijn van Golen
 email: korijn@gmail.com
-description: >-
-  Software engineering blog
 baseurl: ""
 url: "https://korijn.dev"
 github_username:  korijn

@@ -4,5 +4,3 @@
 
 layout: home
 ---
-
-<small>📋 Looking for [my CV](/cv)?</small>
