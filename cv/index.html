@@ -2,20 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Resume Korijn van Golen</title>
+    <title>Resume Korijn van Golen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
         /* FONTS */
         @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
 
-        body {
+        html {
             background: rgb(255, 253, 248);
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.5;
+            font-size: 18px;
+            color: rgb(88, 73, 34);
+        }
+
+        body {
             padding: 0;
             margin: 0;
             border: 0;
-            font-family: 'Roboto', sans-serif;
-            font-size: 14px;
-	        line-height: 1.5;
-            color: rgb(88, 73, 34);
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -23,14 +27,8 @@
         }
 
         h1 {
-            font-size: 2rem;
 	        margin-bottom: .5em;
         }
-        
-        p, li {
-            font-size: .9rem;
-        }
-
         /* LAYOUT */
 
         #container {
@@ -45,10 +43,6 @@
 
         hr { 
             border-bottom: 1px solid rgb(88, 73, 34);
-        }
-
-        #name {
-            text-align: right;
         }
 
         /* TIMELINE */
@@ -75,9 +69,8 @@
             font-weight: bold;
             top: 1em;
             display: block;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 700;
-            font-size: .785rem;
+            font-size: .9em;
+            text-transform: uppercase;
         }
 
         .timeline > div::after {
@@ -91,14 +84,6 @@
             content: '';
             border: 2px solid rgb(88, 73, 34);
             background: white;
-        }
-
-        .timeline > div:last-child {
-            border-image: linear-gradient(
-                to bottom,
-                rgb(88, 73, 34) 60%,
-                rgba(rgb(88, 73, 34), 0)) 1 100%
-            ;
         }
 
         img.profile {
@@ -136,6 +121,7 @@
                 <img class="profile" src="drums.jpg" /><br>
                 🏠 Zoetermeer, Nederland<br>
                 🎂 29 January 1990<br>
+                📧 <a href="mailto:korijn@gmail.com">korijn@gmail.com</a><br>
                 🌐 <a href="https://github.com/korijn">github</a>, <a href="https://www.linkedin.com/in/korijn/">linkedin</a>
             </p>
         </section>
