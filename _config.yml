@@ -14,3 +14,7 @@ plugins:
 
 # Theme settings
 show_excerpts: true
+
+# Content settings
+collections:
+  - work_experiences

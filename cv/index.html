@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -256,6 +258,20 @@
                         PHP, Smarty, XHTML, CSS, jQuery, MySQL, Apache
                     </p>
                 </div>
+                {% assign work_experiences = site.work_experiences | sort: "start_year" | reverse %}
+                {% for work_experience in work_experiences %}
+                {% assign years = work_experience.end_year | minus: work_experience.start_year %}
+                    <div date-is="{{ work_experience.start_year }} - {{ work_experience.end_year }} ({{ years }} years)">
+                        <h2>{{ work_experience.title }}</h2>
+                        <h3 class="company-subtitle">{% if work_experience.company_image %}<img class="company-thumb" src="{{ work_experience.company_image }}" /> {% endif %}{{ work_experience.company }}</h3>
+                        {{ work_experience.content | markdownify }}
+                        {% if work_experience.tech %}
+                            <p class="tech">
+                                {{ work_experience.tech }}
+                            </p>
+                        {% endif %}
+                    </div>
+                {% endfor %}
             </div>
         </section>
         <section>
